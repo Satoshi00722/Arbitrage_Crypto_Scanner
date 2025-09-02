@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Политика конфиденциальности — Arbitrage Crypto Scanner</title>
+<style>
+:root{
+  --bg:#0b1220;
+  --text:#e5e7eb;
+  --muted:#94a3b8;
+  --card: rgba(15,23,42,.62); 
+  --card-weak: rgba(15,23,42,.48);
+  --stroke: rgba(255,255,255,.10);
+  --stroke-strong: rgba(255,255,255,.18);
+  --brand:#60a5fa;
+  --accent:#22d3ee;
+  --bg-image:url('img/ac-bg.png');
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Arial,sans-serif;
+  color:var(--text);
+  background: radial-gradient(1200px 800px at 50% 12%, #0b1220, #091221 55%, #08101d 100%);
+  min-height:100dvh;
+}
+
+/* фон с логотипом */
+.page-bg::before{
+  content:"";
+  position:fixed; inset:0; z-index:-2; pointer-events:none;
+  background:
+    radial-gradient(900px 600px at 50% 8%, rgba(37,99,235,.18), rgba(14,165,233,.08) 40%, rgba(0,0,0,0) 70%),
+    var(--bg-image) no-repeat center 120px / clamp(320px, 38vw, 620px);
+  opacity:.6;
+}
+.page-bg::after{
+  content:""; position:fixed; inset:0; z-index:-1; pointer-events:none;
+  background:linear-gradient(180deg, rgba(7,12,22,.2) 0%, rgba(7,12,22,.58) 35%, rgba(7,12,22,.9) 100%);
+}
+
+/* шапка */
+header{
+  background:rgba(7,12,22,.35);
+  color:#fff; padding:28px 16px;
+  position:sticky; top:0; z-index:10;
+  border-bottom:1px solid var(--stroke);
+  backdrop-filter:saturate(130%) blur(8px);
+}
+.container{max-width:1080px;margin:0 auto;padding:0 16px}
+h1{font-size:28px;margin:4px 0}
+h2{font-size:22px;margin:24px 0 12px}
+.lead{opacity:.9;color:#cbd5e1}
+
+/* карточки */
+main{max-width:900px;margin:0 auto;padding:24px}
+section{
+  background:var(--card);
+  border:1px solid var(--stroke);
+  border-radius:16px;
+  padding:20px;
+  margin:14px 0;
+  box-shadow:0 6px 24px rgba(0,0,0,.28);
+  backdrop-filter: blur(10px) saturate(120%);
+}
+
+/* ссылки */
+a{color:var(--brand);text-decoration:none}
+a:hover{color:var(--accent)}
+
+footer{padding:32px 0 40px;color:var(--muted);text-align:center}
+</style>
+</head>
+<body>
+<div class="page-bg"></div>
+
+<header>
+  <div class="container">
+    <h1>Политика конфиденциальности</h1>
+    <div class="muted">Обновлено: 25.08.2025</div>
+  </div>
+</header>
+
+<main>
+  <section>
+    <p>Настоящая Политика описывает, какие данные собирает приложение <b>Arbitrage Crypto Scanner</b>, как мы их используем и какие права есть у пользователей.</p>
+  </section>
+  <section>
+    <h2>1. Какие данные мы собираем</h2>
+    <ul>
+      <li>Технические данные устройства (модель, версия ОС, язык, IP/город на уровне страны).</li>
+      <li>Диагностика и журналы сбоев для улучшения стабильности.</li>
+      <li>Необязательные данные аккаунта для синхронизации (email/Telegram ID), если пользователь включает интеграции.</li>
+    </ul>
+  </section>
+  <section>
+    <h2>2. Как мы используем данные</h2>
+    <ul>
+      <li>Предоставление и улучшение работы приложения, рассчёт спредов и уведомлений.</li>
+      <li>Аналитика использования в обезличенном виде.</li>
+      <li>Поддержка пользователей и обработка запросов.</li>
+    </ul>
+  </section>
+  <section>
+    <h2>3. Передача третьим лицам</h2>
+    <p>Мы не продаём персональные данные. Передача возможна только поставщикам инфраструктуры (аналитика/краш-репорты/хостинг) с договорными обязательствами по защите данных.</p>
+  </section>
+  <section>
+    <h2>4. Хранение и безопасность</h2>
+    <p>Данные хранятся столько, сколько необходимо для целей, описанных выше, с применением организационных и технических мер защиты.</p>
+  </section>
+  <section>
+    <h2>5. Права пользователя</h2>
+    <ul>
+      <li>Доступ, исправление, удаление данных.</li>
+      <li>Отзыв согласия и отключение аналитики/уведомлений.</li>
+      <li>Обращение: <a href="mailto:arbitrage.scanner.help@gmail.com">arbitrage.scanner.help@gmail.com</a></li>
+    </ul>
+  </section>
+  <section>
+    <h2>6. Контакты</h2>
+    <p>Если у вас есть вопросы по Политике, пишите на <a href="mailto:arbitrage.scanner.help@gmail.com">arbitrage.scanner.help@gmail.com</a>.</p>
+  </section>
+  <section class="muted">
+    <p><a href="index.html">← На главную</a></p>
+  </section>
+</main>
+
+<footer>© 2025 Arbitrage Crypto Scanner</footer>
+</body>
+</html>
